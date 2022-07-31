@@ -18,18 +18,19 @@
       * {
         padding: 0;
         margin: 0;
-        font-family: "Abel", sans-serif;
+        font-family: 'Abel', sans-serif;
       }
 
       body {
         height: 100vh;
+        overflow: hidden;
       }
 
       #navbarMonstera {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 45px;
+        margin: 0 45px 100px 45px;
         height: 20vh;
       }
 
@@ -51,7 +52,9 @@
         font-size: 20px;
       }
 
-      #navMid div:hover {
+      #navMid div h4 a:hover,
+      #navMid div h4 a:focus,
+      #navMid div h4 a:active {
         border-bottom: 2px solid #000000;
       }
 
@@ -72,18 +75,6 @@
         height: 80vh;
       }
 
-      #midWholePart1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-      }
-
-      ul {
-        list-style-type: disc;
-        list-style-position: inside;
-      }
-
       #imgMain {
         position: absolute;
         bottom: 0;
@@ -92,31 +83,49 @@
         width: 450px;
       }
 
+      #midWholePart11 ul {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-left: 35px;
+      }
+
       #monstera {
-        font-family: "Allerta", sans-serif;
-        margin-left: 50px;
+        font-family: 'Allerta', sans-serif;
+        margin-left: 25px;
+        margin-top: -65px;
+        font-size: 80px;
+        font-weight: bold;
       }
 
-      #midWholePart11 div ul li:nth-child(3) {
+      #midWholePart11 ul li:nth-child(3) span {
         font-size: 20px;
-        font-weight: 500;
+        color: #575758;
+        font-weight: bold;
       }
 
-      #midWholePart11 div ul li:nth-child(4) {
+      #midWholePart11 ul li:nth-child(4) span {
         font-size: 20px;
-        font-weight: 500;
+        color: #575758;
+        font-weight: bold;
+      }
+
+      #midWholePart11 ul li:nth-child(3), #midWholePart11 ul li:nth-child(4) {
+        width: 60%;
       }
 
       #midWholePart121 {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         background-color: #466d50;
         color: #ffffff;
-        font-family: "Allerta", sans-serif;
+        font-family: 'Allerta', sans-serif;
         padding: 12px 40px;
         border-radius: 40px;
         margin-top: 50px;
+        margin-left: 45px;
+        margin-bottom: 100px;
+        width: 14%;
       }
 
       #midWholePart122 {
@@ -128,6 +137,26 @@
       }
 
       #midWholePart13 {
+        display: flex;
+        margin-left: 35px;
+      }
+
+      .midWholePart13Parts {
+        display: flex;
+      }
+
+      .midWholePart13Parts div:nth-child(2) {
+        margin-left: 20px;
+      }
+
+      .midWholePart13Parts div:nth-child(2) h4 {
+        font-size: 20px;
+      }
+
+      .midWholePart13Parts div:nth-child(2) p {
+        font-size: 14px;
+        color: #575758;
+        width: 50%
       }
     </style>
   </head>
@@ -169,20 +198,21 @@
     <div id="midWhole">
       <div id="midWholePart1">
         <div id="midWholePart11">
-          <div>
-            <ul>
-              <li><h1 id="monstera">MONSTERA</h1></li>
-              <li></li>
-              <li>
+          <ul>
+            <li><h1 id="monstera">MONSTERA</h1></li>
+            <li></li>
+            <li>
+              <span>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Debitis ab veniam adipisci corrupti unde, nostrum saepe.
-              </li>
-              <li>
+              </span>
+            </li>
+            <li>
+              <span>
                 Quibusdam perferendis, dolore est odit iste cum quas quidem
                 officiis laudantium hic maxime recusandae?
-              </li>
-            </ul>
-          </div>
+              </span>
+            </li>
+          </ul>
         </div>
         <div id="midWholePart12">
           <div id="midWholePart121">
@@ -197,12 +227,12 @@
         <div id="midWholePart13">
           <div class="midWholePart13Parts">
             <div>
-              <img id="feeding" src="./images/water plant.png" />
+              <img id="feeding" src="./images/water plant-remove-0c86a27f-ea02-4f42-b3f4-87ee5b361c2c.png" />
             </div>
-            <div>
+            <div >
               <h4>Feeding</h4>
               <p class="text">
-                Lorem ipsum dolor sit amet consecteturadipisicing elit
+                Lorem ipsum dolor sit amet consect eturadipisicing elit
               </p>
             </div>
           </div>
